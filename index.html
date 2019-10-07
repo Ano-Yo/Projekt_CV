@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projekt CV</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+<div id="particles-js"></div>
+    <svg id="polyTrans" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" height="100%" width="100%" >
+            <path class="tran" d="M866.23,493.2l0.16,190.23c0.81-2.1-2.77-23.78-29.39-20.2c-25.28,3.4-23.63,32.72-23.63,32.72 s3.26,25.71,28.13,26.54c31.54,1.05,39.33-22.09,38.89-38.07l1-155l211-88l1,160c2.99-7.35-9.59-23-33-11c-17.96,9.21-16,30-16,30 s-2.94,20.87,25,27c29.11,6.38,38.93-25.1,38-37l-3-252L865.61,467.22L866.23,493.2z"/>
+            <path class="tran2" d="M932.97,624.25c-5.33,0.49-12.85,0.73-17.93,0.73c-54.78,0-82.17-42.66-82.17-85.56c0-43.14,27.39-85.8,82.41-85.8
+            c5.09,0,12.36,0.24,17.69,0.73l-0.48,7.27c-5.33-0.48-12.6-0.73-17.21-0.73c-50.17,0-75.14,39.27-75.14,78.53
+            s24.96,78.29,74.89,78.29c4.61,0,12.12-0.24,17.45-0.73L932.97,624.25z"/>
+            <path class="tran2" d="M963.74,453.62l58.17,156.58l58.17-156.58l6.79,2.18l-64.96,175.24L956.95,455.8L963.74,453.62z"/>
+            <path class="tran3" d="M667,587.36h91.69l65.6-95.92l19.04,160.51L903.29,384l15.52,315.27l26.1-216.79l33.86,126.62l19.75-33.25H1129
+            v3.2h-126.26l-24.69,42.21l-31.04-114.47L917.4,737l-17.63-321.03l-57.84,270.51l-19.04-181.62l-62.78,86.97L667,590.56V587.36z"/>
+            <path class="tran5" d="M1171,570c0,0,1,16,0,24s-14,25-14,25l-24,15l-27,6c0,0-72-2-146-66s-79.5-132.5-79.5-132.5
+            s-8.34-29.74,13.5-54.5c7.5-8.5,32.5-16.5,44-17c11.99-0.52,14,9,14,9l23,54c0,0,7,8,0,16s-15,21-15,21s-11,10-6,18s35.5,40.5,46,52
+            c11.01,12.06,54,33,54,33s10,3,16-3s24-30,24-30s5.5-7.5,17,0c16.86,10.99,55.5,24.5,55,24C1164.42,562.42,1171,570,1171,570z"/>
+            <path class="tran4" d="M851.5,341.5l40,26l14-4l12-51h92l10,51l14,4l42-28l66,67l-29,40l4,14l52,12v91l-48,11l-7,16l30,40l-68,68
+            l-42-29l-14,6l-9,47l-92,1l-10-47l-17-7l-40,28l-68-67l29-40l-5-17l-51-10l2-92l51-10l3-16l-26-41L851.5,341.5z"/>
+            <path class="tran4" d="M959.5,430.5c0,0,93-2,92,87s-90,91-90,91s-88-9-87-86S930.5,436.5,959.5,430.5z"/>
+    </svg>
+    <div id="canvas">
+        <div class="container">
+            <div id="vertial">
+                <div id="intro">
+                    <a text="CV" href="index.html"><h1 id="cv" data-text="CV" >CV</h1></a>
+                    <p>by Ilario Flury</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li id="personLI"><button id="personBT">Über mich</button></li>
+                    <li id="hobbyLI"><button id="hobbysBT">Hobbys</button></li>
+                    <li id="projektLI"><button id="projektBT">Über das Projekt</button></li>
+                    <li id="laLI"><button id="laBT">Lebensabschnitte</button></li>
+                    <li id="kontaktLI"><button id="kontaktBT">Kontakt</button></li>
+                </ul>
+            </nav>
+            <section id="einleitung">
+                <h1>Herzlich willkommen</h1>
+                <p>
+                    Diese Webseite ist ein kleines Projekt, welches mein Können zeigen soll.
+                </p>
+            </section>
+            <section id="person">
+                <h1>Über mich</h1>
+                <p>
+                    Mein Name ist Ilario Flury, 17. Geboren in Berlin und aufgewachsen in Winterthur. Dabei begleiteten mich die verschiedenen Sprachen, <br>
+                    wie Deutsch, Italienisch und Japanisch. Neben den obligatorischen Schulabschlüssen habe ich die Japanischeschule absolviert.  <br>
+                </p>
+            </section>
+            <section id="hobby">
+                <h1>Meine Hobbys</h1>
+                <p>
+                    In meiner Vergangenheit habe ich schon Vieles asprobiert. Von Fussball bis hin zu Schach. <br>
+                    Doch das was mich am meisten fesselte war die Musik welches mich in Form einer Posaune <br>
+                    begleitet. Mit der Zeit blieb es nicht nur bei einem Instrument und so nahm ich das Klavir <br>
+                    und die Gitarre auf. Sport ist der andere Schwerpunkt in meinem Leben. Dazu zähle ich <br>
+                    Freerunning undCalisthenics (Das Trainieren mit reinem Körpergewicht). Die bisher erwähnten <br>
+                    Hobbys haben immer mehr oder weniger mit der Kreativität zu tun, sowie die nächsten beiden <br>
+                    Aktivitäten. Nämlich Cardistry und Zeichnen. Zum Zeichnen muss wohl nichts erklärt werden, <br>
+                    doch zur Cardistry braucht es wohl eine kleine Introduktion. Cardistry ist nämlich das <br>
+                    Mischen und elegante darstellen von Spielkarten. <br>
+                    <br>
+                    Wie man sieht beschäftige ich mit verschiedenen Aktivitäten in der Freizeit. Und als ob <br>
+                    die Liste nicht genug lang ist kahm während dem Projekt noch ein Neues hinzu. Die Webentwicklung.
+                </p>
+            </section>
+            <section id="projekt">
+                <h1>Über das Projekt</h1>
+                <p>
+                    Das Projekt begann ich aus der Intention um an die Praktikumsstellen gut anzukommen. So <br>
+                    traurig es auch klingen mag erwiesen meine Noten keine Glanzleistung. Und genau um diese <br>
+                    Zahlen, welches meinen können zeigen sollen, es zu beweisen, dass ich es kann. Anfangs  <br>
+                    fiengs mit simpelem HTML und CSS an. Doch schnell mal lernte ich Programme wie JS und deren <br>
+                    fassetenreiche Plug-Ins. Mittlerweile behersche ich weit ausmehr Kompetenzen in den <br>
+                    Web-Entwicklersprachen als ein IMS Schüler, welcher das 3.Jahr abgeschlossen hat. <br>
+                    <br>
+                    Bis zur Bewerbungsgespräch möchte ich gerne eine kleine Projektdokumentation zeigen können <br>
+                    um meinen Gedankenvorgang vertieft niederzuschreiben. Bug-Fixes sollen vortgehend erledigt <br>
+                    werden und Ziel währe die Einbingung von einem PHP-Kontaktformular mit einer verknüpften <br>
+                    Datenbank. Das Onlinestellen überlege ich mir noch da die Lizensierung des Plug-Ins und die <br>
+                    Fonts mir einen Nebenaufwand bereiten. Ausserdem sind einige Daten teils zu privat.
+                </p>
+            </section>
+            <section id="la">
+                <h1>Lebensabschnitte</h1>
+                <h2>Schulen</h2>
+                <table>
+                    <tr>
+                        <th>Primarstufe:</th>
+                        <td>Schulhaus Rebwiesen, 8406 Winterthur</td>
+                        <td>2007-2013</td>
+                    </tr>
+                    <tr>
+                        <th>Sekundarstufe: </th>
+                        <td>Schulhaus Rosenau, 8406 Winterthur</td>
+                        <td>2013-2016</td>
+                    </tr>
+                    <tr>
+                        <th>IMS:</th>
+                        <td>Kantonsschule Büelrein Winterthut, 8400 Winterthur</td>
+                        <td>2016-Heute</td>
+                    </tr>
+                    <tr>
+                        <th>Japanische Schule: </th>
+                        <td>Japanische Schule Uster, 8610 Uster</td>
+                        <td>2007-2016</td>
+                    </tr>  
+                </table>
+            </section>
+            <section id="kontakt">
+                <h1>Kontakt</h1>
+                <form action="php/mail.php" method="POST">
+                    <p>Name</p> <input type="text" name="name">
+                    <p>Email</p> <input type="text" name="email">
+                    <p>Nachricht</p><textarea name="message" rows="6" cols="25"></textarea><br />
+                    <input type="submit" id="submit" value="Send"><input type="reset" id="reset" value="Clear">
+                    </form>
+            </section>
+            <div id="hider"></div>
+            <script src="js/particles.js"></script>
+            <script src="js/app.js"></script>
+            <script src="js/jquery.js"></script>
+            <script src="./js/anime.min.js" ></script>
+            <script>
+                var isAnimating = false;
+                var div = document.getElementById("particles-js")
+                var btn1 = document.getElementById("personBT");
+                var btn2 = document.getElementById("hobbysBT");
+                var btn3 = document.getElementById("projektBT");
+                var btn4 = document.getElementById("laBT");
+                var btn5 = document.getElementById("kontaktBT");
+
+                $(document).ready(function () {
+                    $( '#hider' ).hide();
+                    $( 'section' ).hide();
+                    $( '#particles-js' ).hide();
+                    $( '#einleitung' ).delay(5200).fadeIn(3000);
+                    $( '#particles-js' ).delay(4000).fadeIn(3000);
+                    $( '.tran' ).hide();
+                    $( '.tran2' ).hide();
+                    $( '.tran3' ).hide();
+                    $( '.tran4' ).hide();
+                    $( '.tran5' ).hide();
+                    $(document).ready( function () {
+                        isAnimating = true;
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 6500);
+                    });
+                    $( '#personBT' ).click(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+
+                        isAnimating = true;
+                        $( '.tran2' ).delay(1500).fadeIn(1500);
+                        $( '#particles-js' ).fadeOut(1500);
+                        $( 'section' ).fadeOut(1500);
+                        $( '.tran2' ).delay(3000).fadeOut(1000); 
+                        $( '#person' ).delay(4800).fadeIn(1500);
+                        $( '#particles-js' ).delay(3000).fadeIn(1500);
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 7000);
+                        
+                    });
+                    $( '#hobbysBT' ).click(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+
+                        isAnimating = true;
+                        $( '.tran' ).delay(1500).fadeIn(1500);
+                        $( '#particles-js' ).fadeOut(1500);
+                        $( 'section' ).fadeOut(1500);
+                        $( '.tran' ).delay(3000).fadeOut(1000); 
+                        $( '#hobby' ).delay(4800).fadeIn(1500);
+                        $( '#particles-js' ).delay(3000).fadeIn(1500);
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 7000);
+                    });
+                    $( '#projektBT' ).click(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+
+                        isAnimating = true;
+                        $( '.tran4' ).delay(1500).fadeIn(1500);
+                        $( '#particles-js' ).fadeOut(1500);
+                        $( 'section' ).fadeOut(1500);
+                        $( '.tran4' ).delay(3000).fadeOut(1000); 
+                        $( '#projekt' ).delay(4800).fadeIn(3000);
+                        $( '#particles-js' ).delay(3000).fadeIn(1500);
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 7000);
+                    });
+                    $( '#laBT' ).click(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+
+                        isAnimating = true;
+                        $( '.tran3' ).delay(1500).fadeIn(1500);
+                        $( '#particles-js' ).fadeOut(1500);
+                        $( 'section' ).fadeOut(1500);
+                        $( '.tran3' ).delay(3000).fadeOut(1000); 
+                        $( '#la' ).delay(4800).fadeIn(1500);
+                        $( '#particles-js' ).delay(3000).fadeIn(1500);
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 7000);
+                    });
+                    $( '#kontaktBT' ).click(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+
+                        isAnimating = true;
+                        $( '.tran5' ).delay(1500).fadeIn(1500);
+                        $( '#particles-js' ).fadeOut(1500);
+                        $( 'section' ).fadeOut(1500);
+                        $( '.tran5' ).delay(3000).fadeOut(1000); 
+                        $( '#kontakt' ).delay(4800).fadeIn(1500);
+                        $( '#particles-js' ).delay(3000).fadeIn(1500);
+                        setTimeout(function() {
+                            isAnimating = false;
+                        }, 7000);
+                    });
+                    $("button").hover(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+                        $(this).css("text-shadow","0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff");
+                    }, function() {
+                        $(this).css("text-shadow","0 0 0px #fff");
+                    }
+                    );
+                    $("#cv").hover(function() {
+                        if (isAnimating) {
+                        return;
+                        }
+                        $(this).css("text-shadow","0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff");
+                    }, function() {
+                        $(this).css("text-shadow","0 0 0px #fff");
+                    }
+                    );
+                });
+                btn1.onclick = function() {
+                    anime({
+                        targets: '.tran2',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function(el, i) { return i * 250 },
+                        direction: 'alternate',
+                        loop: true
+                    });
+                };
+                btn2.onclick = function() {
+                    anime({
+                        targets: '.tran',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function(el, i) { return i * 250 },
+                        direction: 'alternate',
+                        loop: true
+                    });
+                };
+                btn4.onclick = function() {
+                    anime({
+                        targets: '.tran3',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function(el, i) { return i * 250 },
+                        direction: 'alternate',
+                        loop: true
+                    });
+                };
+                btn5.onclick = function() {
+                    anime({
+                        targets: '.tran5',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function(el, i) { return i * 250 },
+                        direction: 'alternate',
+                        loop: true
+                    });
+                };
+                btn3.onclick = function() {
+                    anime({
+                        targets: '.tran4',
+                        strokeDashoffset: [anime.setDashoffset, 0],
+                        easing: 'easeInOutSine',
+                        duration: 1500,
+                        delay: function(el, i) { return i * 250 },
+                        direction: 'alternate',
+                        loop: true
+                    });
+                };
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

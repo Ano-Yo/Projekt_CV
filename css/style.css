@@ -1,0 +1,361 @@
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+/* ---- base ---- */
+@font-face {
+  font-family: Existenc-Light;
+  src: url("../existence/ExiL-TT/Existence-Light.ttf");
+}
+html,body{
+	width:100%;
+	height:100%;
+  background:#111;
+  font-family: Existenc-Light;
+  color: #ffffff;
+  overflow: hidden;
+}
+#hider {
+  z-index: 10;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*SVG*/
+.tran {
+  fill: transparent;
+  stroke: #ffffff;
+}
+.tran2 {
+  fill: transparent;
+  stroke: #ffffff;
+}
+.tran3 {
+  fill: transparent;
+  stroke: #ffffff;
+}
+.tran4 {
+  fill: transparent;
+  stroke: #ffffff;
+}
+.tran5 {
+  fill: transparent;
+  stroke: #ffffff;
+}
+#canvas{
+  display:block;
+}
+
+#intro {
+  z-index: 3;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 128px;
+  color: #ffffff;
+  -webkit-animation: fadeMove 5s;
+  -moz-animation: fadeMove 5s;
+  -ms-animation: fadeMove 5s;
+  animation: fadeMove 5s;
+  animation-fill-mode: forwards;
+}
+#intro h1 {
+  color: #ffffff;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+#intro p {
+  opacity: 0;
+  font-size: 32px;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  animation: fadein 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li button {
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  text-shadow: 0px 0px 0px #fff;
+  color: #ffffff;
+  font-family: Existenc-Light;
+  text-decoration: none;
+  display: block;
+  font-size: 32px;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+#personLI {
+  opacity: 0;
+  -webkit-animation: fadein1 4s;
+  -moz-animation: fadein1 4s;
+  -ms-animation: fadein1 4s;
+  animation: fadein1 4s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+#hobbyLI {
+  opacity: 0;
+  -webkit-animation: fadein1 4s;
+  -moz-animation: fadein1 4s;
+  -ms-animation: fadein1 4s;
+  animation: fadein1 4s;
+  animation-delay: 4300ms;
+  animation-fill-mode: forwards;
+}
+#projektLI {
+  opacity: 0;
+  -webkit-animation: fadein1 4s;
+  -moz-animation: fadein1 4s;
+  -ms-animation: fadein1 4s;
+  animation: fadein1 4s;
+  animation-delay: 4600ms;
+  animation-fill-mode: forwards;
+}
+#laLI {
+  opacity: 0;
+  -webkit-animation: fadein1 4s;
+  -moz-animation: fadein1 4s;
+  -ms-animation: fadein1 4s;
+  animation: fadein1 4s;
+  animation-delay: 4900ms;
+  animation-fill-mode: forwards;
+}
+#kontaktLI {
+  opacity: 0;
+  -webkit-animation: fadein1 4s;
+  -moz-animation: fadein1 4s;
+  -ms-animation: fadein1 4s;
+  animation: fadein1 4s;
+  animation-delay: 5200ms;
+  animation-fill-mode: forwards;
+}
+
+/*Cntent*/
+section {
+  margin-top: 40vh;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+}
+section h1 {
+  margin-bottom: 2%;
+  font-size: 4rem;
+}
+section p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+table {
+  margin-top: 2%;
+  margin-left: 30%;
+  width: 40%;
+}
+h2 {
+  font-size: 24px;
+}
+th, td {
+  font-size: 18px;
+  width: 200px;
+}
+#kontakt {
+  padding-top: 5%;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  width: 200px;
+  background-color:rgba(0, 0, 0, 0);
+  color: #ffffff;
+  margin: 10px;
+  font-family: Existenc-Light;
+}
+textarea {
+  height: 125px;
+  max-width: 200px;
+  max-height: 125px;
+  min-width: 200px;
+  min-height: 125px;
+}
+#submit, #reset {
+  width: 100px;
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 0.5; 
+}
+/*Fade-Animation*/
+@keyframes fadeMove {
+  0%{ opacity: 0; }
+  50%{ text-shadow: 0px 0px 0px #ffffff; }
+  65%{ opacity: 1; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; content: attr(CV); filter: blur(); }
+  70%{ text-shadow: 0px 0px 0px #ffffff; width: 100%; top:45%; margin-left: 0%;}
+  100%{ width: 0%; top: 5%; margin-left: 5%; position: fixed;}
+}
+@-moz-keyframes fadeMove {
+  0%{ opacity: 0; }
+  50%{ text-shadow: 0px 0px 0px #ffffff; }
+  65%{ opacity: 1; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; content: attr(CV); filter: blur(); }
+  70%{ text-shadow: 0px 0px 0px #ffffff; width: 100%; top:45%; margin-left: 0%;}
+  100%{ width: 0%; top: 5%; margin-left: 5%; position: fixed;}
+}
+@-webkit-keyframes fadeMove {
+  0%{ opacity: 0; }
+  50%{ text-shadow: 0px 0px 0px #ffffff; }
+  65%{ opacity: 1; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; content: attr(CV); filter: blur(); }
+  70%{ text-shadow: 0px 0px 0px #ffffff; width: 100%; top:45%; margin-left: 0%;}
+  100%{ width: 0%; top: 5%; margin-left: 5%; position: fixed;}
+}
+@-ms-keyframes fadeMove {
+  0%{ opacity: 0; }
+  50%{ text-shadow: 0px 0px 0px #ffffff; }
+  65%{ opacity: 1; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; content: attr(CV); filter: blur(); }
+  70%{ text-shadow: 0px 0px 0px #ffffff; width: 100%; top:45%; margin-left: 0%;}
+  100%{ width: 0%; top: 5%; margin-left: 5%; position: fixed;}
+}
+/*FedeIn-Animation*/
+@keyframes fadein {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+}
+@keyframes fadein {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+}
+@keyframes fadein {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+}
+@keyframes fadein {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+}
+
+@keyframes fadein1 {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+@-moz-keyframes fadein1 {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+@-webkit-keyframes fadein1 {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+@-ms-keyframes fadein1 {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+/*Responsiv*/
+@media screen and (max-width: 850px) {
+
+  li button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    text-shadow: 0px 0px 0px #fff;
+    color: #ffffff;
+    font-family: Existenc-Light;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 7px 8px;
+    text-decoration: none;
+    float: left;
+  }
+  section h1 {
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+  }
+  section p {
+    margin: 0;
+    font-size: 11px;
+  }
+  #intro p {
+    opacity: 0;
+    font-size: 20px;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    animation: fadein 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+  }
+  #intro h1 {
+    color: #ffffff;
+    font-size: 72px;
+  }
+}
+
+/*particles.js*/
+
+#particles-js{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
